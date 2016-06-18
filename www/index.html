@@ -1,0 +1,58 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cliente Spotify</title>
+
+	<script src="index.js"> </script>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+	<div data-role="page" id="index">
+		<div data-role="header">
+			<h1>Buscar Artista</h1>
+		</div>
+
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<label for="txtArtista">Nombre:</label>
+				<input type="text" id="txtArtista"> </input>
+			</div>
+			<button onclick="BuscarArtistas()">Buscar</button>
+			<ul id="listaArtistas" data-role="listview" data-inset="true"></ul>
+		</div>
+
+		<div data-role="footer">
+		</div>
+	</div>
+
+	<div data-role="page" id="artista">
+
+		<div data-role="header">
+			<h2 id="nombreArtista">Nombre del Artista: </h2>
+		</div>
+
+		<div data-role="content">
+			<div style="text-align:center">
+				<p id="Seguidores">Número de Seguidores: </p>
+				<img src="" id="imagen">
+			</div>
+			<h3>Canciones más Populares</h3>
+			<ul id="cancionesPopulares" data-role="listview" data-inset="true"></ul>
+		</div>
+
+		<div data-role="footer">
+		</div>
+
+	</div>
+
+
+
+	
+</body>
+</html>
